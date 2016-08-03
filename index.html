@@ -5,25 +5,29 @@
     <link rel="stylesheet" href="./lib/sass/a11y-developer-checklist.css" />
 </head>
 <body>
-    <header>
-        <div>
+    <a class="skip-link" href="#main">Skip to the checklist</a>
+    <a class="skip-link" href="#results">Skip to the results</a>
+    <header class="main-header" role="banner" aria-label="Topmost">
+        <div class="main-title">
             <h1>WCAG AA Checklist</h1>
         </div>
-        <div>
-            <h2>Historic checks</h2>
+        <div class="epic-checks is-hidden">
+            <h2>Epic checks</h2>
         </div>
     </header>
-    <div>
-        <main id="main" tabindex="-1">
+    <div class="wrapper">
+        <main id="main" tabindex="-1" aria-label="Content" class="main-column">
             <h2>The Checklist</h2>
-            <ul>
+            <ul class="main-checklist">
                 <li>
                     <div>
                         <input type="checkbox" id="a01" />
                     </div>
                     <div>
-                        <label for="a01">Alternative text</label>
-                        <p>I have written textual alternatives for all non-visual, non-decorative content.</p>
+                        <label for="a01">
+                            <span class="rule-title">Alternative text</span>
+                            <span class="rule-description">I have written textual alternatives for all non-visual, non-decorative content.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -31,8 +35,10 @@
                         <input type="checkbox" id="a02" />
                     </div>
                     <div>
-                        <label for="a02">Transcripts for audio and video</label>
-                        <p>I have provided alternative text for all video and audio (if applicable).</p>
+                        <label for="a02">
+                            <span class="rule-title">Transcripts for audio and video</span>
+                            <span class="rule-description">I have provided alternative text for all video and audio (if applicable).</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -40,8 +46,10 @@
                         <input type="checkbox" id="a03" />
                     </div>
                     <div>
-                        <label for="a03">Closed-captions</label>
-                        <p>My video has closed-captioning (if video is present).</p>
+                        <label for="a03">
+                            <span class="rule-title">Closed-captions</span>
+                            <span class="rule-description">My video has closed-captioning (if video is present).</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -49,8 +57,10 @@
                         <input type="checkbox" id="a04" />
                     </div>
                     <div>
-                        <label for="a04">Audio descriptions</label>
-                        <p>My video has audio descriptions (if video is present).</p>
+                        <label for="a04">
+                            <span class="rule-title">Audio descriptions</span>
+                            <span class="rule-description">My video has audio descriptions (if video is present).</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -58,8 +68,10 @@
                         <input type="checkbox" id="a05" />
                     </div>
                     <div>
-                        <label for="a05">Logical structure</label>
-                        <p>My markup is logical and has semantic structure, and I've used headings and other landmarks properly.</p>
+                        <label for="a05">
+                            <span class="rule-title">Logical structure</span>
+                            <span class="rule-description">My markup is logical and has semantic structure, and I've used headings and other landmarks properly.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -67,8 +79,10 @@
                         <input type="checkbox" id="a06" />
                     </div>
                     <div>
-                        <label for="a06">Meaningful content</label>
-                        <p>My content is structured in a meaningful order and floated elements (if present) don't interrupt flow from top to bottom.</p>
+                        <label for="a06">
+                            <span class="rule-title">Meaningful content</span>
+                            <span class="rule-description">My content is structured in a meaningful order and floated elements (if present) don't interrupt flow from top to bottom.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -76,8 +90,10 @@
                         <input type="checkbox" id="a07" />
                     </div>
                     <div>
-                        <label for="a07">Two sense minimum</label>
-                        <p>I provide content and instructions in such a way that no one sense alone is required.</p>
+                        <label for="a07">
+                            <span class="rule-title">Two sense minimum</span>
+                            <span class="rule-description">I provide content and instructions in such a way that no one sense alone is required.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -85,8 +101,10 @@
                         <input type="checkbox" id="a08" />
                     </div>
                     <div>
-                        <label for="a08">Use of color</label>
-                        <p>My information is presented in such a way that color alone is not the only way to understand it.</p>
+                        <label for="a08">
+                            <span class="rule-title">Use of color</span>
+                            <span class="rule-description">My information is presented in such a way that color alone is not the only way to understand it.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -94,8 +112,10 @@
                         <input type="checkbox" id="a09" />
                     </div>
                     <div>
-                        <label for="a09">Automatic audio and video</label>
-                        <p>I do not play any video or audio automatically.</p>
+                        <label for="a09">
+                            <span class="rule-title">Automatic audio and video</span>
+                            <span class="rule-description">I do not play any video or audio automatically.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -103,8 +123,10 @@
                         <input type="checkbox" id="a10" />
                     </div>
                     <div>
-                        <label for="a10">Keyboard only</label>
-                        <p>My app, website, or content is fully usable with only a keyboard.</p>
+                        <label for="a10">
+                            <span class="rule-title">Keyboard only</span>
+                            <span class="rule-description">My app, website, or content is fully usable with only a keyboard.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -112,8 +134,10 @@
                         <input type="checkbox" id="a11" />
                     </div>
                     <div>
-                        <label for="a11">Keyboard traps</label>
-                        <p>I do not trap the keyboard except in planned and expected situations (such as a menu or a modal dialog).</p>
+                        <label for="a11">
+                            <span class="rule-title">Keyboard traps</span>
+                            <span class="rule-description">I do not trap the keyboard except in planned and expected situations (such as a menu or a modal dialog).</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -121,8 +145,10 @@
                         <input type="checkbox" id="a12" />
                     </div>
                     <div>
-                        <label for="a12">Timer controls</label>
-                        <p>Any timers or timed elements have controls.</p>
+                        <label for="a12">
+                            <span class="rule-title">Timer controls</span>
+                            <span class="rule-description">Any timers or timed elements have controls.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -130,8 +156,10 @@
                         <input type="checkbox" id="a13" />
                     </div>
                     <div>
-                        <label for="a13">Moving content</label>
-                        <p>Content that moves, such as tickers or slideshows, have controls that let users pause, stop, or even hide it.</p>
+                        <label for="a13">
+                            <span class="rule-title">Moving content</span>
+                            <span class="rule-description">Content that moves, such as tickers or slideshows, have controls that let users pause, stop, or even hide it.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -139,8 +167,10 @@
                         <input type="checkbox" id="a14" />
                     </div>
                     <div>
-                        <label for="a14">Flashing content</label>
-                        <p>Nothing in my app or website flashes more than three times per second.</p>
+                        <label for="a14">
+                            <span class="rule-title">Flashing content</span>
+                            <span class="rule-description">Nothing in my app or website flashes more than three times per second.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -148,8 +178,10 @@
                         <input type="checkbox" id="a15" />
                     </div>
                     <div>
-                        <label for="a15">Skip links</label>
-                        <p>I have provided skip links.</p>
+                        <label for="a15">
+                            <span class="rule-title">Skip links</span>
+                            <span class="rule-description">I have provided skip links.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -157,8 +189,10 @@
                         <input type="checkbox" id="a16" />
                     </div>
                     <div>
-                        <label for="a16">Page title</label>
-                        <p>My website has a clear title on every page.</p>
+                        <label for="a16">
+                            <span class="rule-title">Page title</span>
+                            <span class="rule-description">My website has a clear title on every page.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -166,8 +200,10 @@
                         <input type="checkbox" id="a17" />
                     </div>
                     <div>
-                        <label for="a17">Focus order and tabindex</label>
-                        <p>I do not use any positive integers for tabindex and tabbing through my website is intuitive and logical.</p>
+                        <label for="a17">
+                            <span class="rule-title">Focus order and tabindex</span>
+                            <span class="rule-description">I do not use any positive integers for tabindex and tabbing through my website is intuitive and logical.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -175,8 +211,10 @@
                         <input type="checkbox" id="a18" />
                     </div>
                     <div>
-                        <label for="a18">Link purpose</label>
-                        <p>Every link in my website is clear and can be understood out of context (no, "click here" or "read more").</p>
+                        <label for="a18">
+                            <span class="rule-title">Link purpose</span>
+                            <span class="rule-description">Every link in my website is clear and can be understood out of context (no, "click here" or "read more").</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -184,8 +222,10 @@
                         <input type="checkbox" id="a19" />
                     </div>
                     <div>
-                        <label for="a19">Page language</label>
-                        <p>Each web page in my website has a language, and any component that can render a language other than the main language is also defined.</p>
+                        <label for="a19">
+                            <span class="rule-title">Page language</span>
+                            <span class="rule-description">Each web page in my website has a language, and any component that can render a language other than the main language is also defined.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -193,8 +233,10 @@
                         <input type="checkbox" id="a20" />
                     </div>
                     <div>
-                        <label for="a20">Element focus and input</label>
-                        <p>Elements don't change when they receive focus or input.</p>
+                        <label for="a20">
+                            <span class="rule-title">Element focus and input</span>
+                            <span class="rule-description">Elements don't change when they receive focus or input.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -202,17 +244,21 @@
                         <input type="checkbox" id="a21" />
                     </div>
                     <div>
-                        <label for="a21">Headings</label>
-                        <p>Lengthy content is broken up with headings for logical paragraphs or sections.</p>
+                        <label for="a21">
+                            <span class="rule-title">Headings</span>
+                            <span class="rule-description">Lengthy content is broken up with headings for logical paragraphs or sections.</span>
+                        </label>
                     </div>
-                </li>----
+                </li>
                 <li>
                     <div>
                         <input type="checkbox" id="a22" />
                     </div>
                     <div>
-                        <label for="a22">Error handling and identification</label>
-                        <p>Errors are clearly presented and a means of correction is provided.</p>
+                        <label for="a22">
+                            <span class="rule-title">Error handling and identification</span>
+                            <span class="rule-description">Errors are clearly presented and a means of correction is provided.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -220,8 +266,10 @@
                         <input type="checkbox" id="a23" />
                     </div>
                     <div>
-                        <label for="a23">Form labels</label>
-                        <p>Every form field has a label that references the form field with <code>for</code> or is inclusive and wraps the input.</p>
+                        <label for="a23">
+                            <span class="rule-title">Form labels</span>
+                            <span class="rule-description">Every form field has a label that references the form field with <code>for</code> or is inclusive and wraps the input.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -229,8 +277,10 @@
                         <input type="checkbox" id="a24" />
                     </div>
                     <div>
-                        <label for="a24">Valid code</label>
-                        <p>My code is valid and has perhaps passed the W3C Validation tool.</p>
+                        <label for="a24">
+                            <span class="rule-title">Valid code</span>
+                            <span class="rule-description">My code is valid and has perhaps passed the W3C Validation tool.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -238,8 +288,10 @@
                         <input type="checkbox" id="a25" />
                     </div>
                     <div>
-                        <label for="a25">Contrast</label>
-                        <p>All non-decorative elements, text, images, and controls have sufficient contrast.</p>
+                        <label for="a25">
+                            <span class="rule-title">Contrast</span>
+                            <span class="rule-description">All non-decorative elements, text, images, and controls have sufficient contrast.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -247,8 +299,10 @@
                         <input type="checkbox" id="a26" />
                     </div>
                     <div>
-                        <label for="a26">Text resizing</label>
-                        <p>My website or app can be scaled up to 200% without loss of content, context, or function.</p>
+                        <label for="a26">
+                            <span class="rule-title">Text resizing</span>
+                            <span class="rule-description">My website or app can be scaled up to 200% without loss of content, context, or function.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -256,8 +310,10 @@
                         <input type="checkbox" id="a27" />
                     </div>
                     <div>
-                        <label for="a27">Images of text</label>
-                        <p>I do not use any images of text; I use actual text.</p>
+                        <label for="a27">
+                            <span class="rule-title">Images of text</span>
+                            <span class="rule-description">I do not use any images of text; I use actual text.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -265,8 +321,10 @@
                         <input type="checkbox" id="a28" />
                     </div>
                     <div>
-                        <label for="a28">Finding pages</label>
-                        <p>I offer several different ways to find pages or content.</p>
+                        <label for="a28">
+                            <span class="rule-title">Finding pages</span>
+                            <span class="rule-description">I offer several different ways to find pages or content.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -274,8 +332,10 @@
                         <input type="checkbox" id="a29" />
                     </div>
                     <div>
-                        <label for="a29">Keyboard focus</label>
-                        <p>The focus indicator when using a keyboard is visible and clear.</p>
+                        <label for="a29">
+                            <span class="rule-title">Keyboard focus</span>
+                            <span class="rule-description">The focus indicator when using a keyboard is visible and clear.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -283,8 +343,10 @@
                         <input type="checkbox" id="a30" />
                     </div>
                     <div>
-                        <label for="a30">Consistent navigation and menus</label>
-                        <p>My navigation and all of my menus are consistent, along with presentation and controls.</p>
+                        <label for="a30">
+                            <span class="rule-title">Consistent navigation and menus</span>
+                            <span class="rule-description">My navigation and all of my menus are consistent, along with presentation and controls.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -292,8 +354,10 @@
                         <input type="checkbox" id="a31" />
                     </div>
                     <div>
-                        <label for="a31">Icon and button consistency</label>
-                        <p>Buttons and icons within my app or website are used consistently.</p>
+                        <label for="a31">
+                            <span class="rule-title">Icon and button consistency</span>
+                            <span class="rule-description">Buttons and icons within my app or website are used consistently.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -301,8 +365,10 @@
                         <input type="checkbox" id="a32" />
                     </div>
                     <div>
-                        <label for="a32">Error suggestions</label>
-                        <p>I offer suggestions for fixing or resolving errors encountered.</p>
+                        <label for="a32">
+                            <span class="rule-title">Error suggestions</span>
+                            <span class="rule-description">I offer suggestions for fixing or resolving errors encountered.</span>
+                        </label>
                     </div>
                 </li>
                 <li>
@@ -310,15 +376,23 @@
                         <input type="checkbox" id="a33" />
                     </div>
                     <div>
-                        <label for="a33">Sensitive data</label>
-                        <p>I provide elegant error handling to reduce the risk of errors with sensitive data or information.</p>
+                        <label for="a33">
+                            <span class="rule-title">Sensitive data</span>
+                            <span class="rule-description">I provide elegant error handling to reduce the risk of errors with sensitive data or information.</span>
+                        </label>
                     </div>
                 </li>
             </ul>
         </main>
-        <div id="results" tabindex="-1">
+        <div id="results" tabindex="-1" class="side-column">
             <h2>Your Results</h2>
+            <p>To meet WCAG AA, you must tick all of the boxes for the 33 criteria in the checklist that apply to your web app or site. Below are your results.</p>
+            <div class="results-container" aria-live="polite">
+                <span class="ticked-boxes">0</span>/<span class="total-boxes">33</span>
+            </div>
         </div>
     </div>
+    <script type="text/js" src="./lib/js/jquery-3.1.0.min.js"></script>
+    <script type="text/js" src="./lib/js/a11y-developer-checklist.js"></script>
 </body>
 </html>
