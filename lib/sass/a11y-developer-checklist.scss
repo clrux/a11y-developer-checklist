@@ -2,20 +2,21 @@ $white: #fff;
 $light-gray: #f2f2f2;
 $main-text-color: #222;
 $main-color: #03c;
+$passed-color: #e4f9f2;
 $hilite-color: #ffc;
 
 body {
     background: $white;
     color: $main-text-color;
     font: 1rem/1.3rem sans-serif;
-    
+
     a, a:link {
         color: $main-color;
         background: $white;
-        
+
         &:focus,
         &:hover {
-            
+    
         }
     }
 }
@@ -25,7 +26,7 @@ body {
     position: absolute;
     top: -100rem;
     padding: 1rem;
-    
+
     &:focus {
         top: 0;
     }
@@ -33,13 +34,13 @@ body {
 
 .main-header {
     border-bottom: 1px solid $light-gray;
-    
+
     .main-title {
-        
+
     }
-    
+
     .epic-checks {
-        
+
     }
 }
 
@@ -55,52 +56,57 @@ body {
     border-right: 1px solid $light-gray;
     flex: 1;
     vertical-align: top;
-    
+
     .main-checklist {
         margin: 0;
         padding: 0;
         list-style: none;
-        
+
         li {
             display: flex;
             align-items: stretch;
             flex-direction: row;
             justify-content: flex-start;
-            
+
             div:first-of-type {
                 display: inline-block;
                 width: 1rem;
                 padding: 1rem;
-                
+
                 input {
                     height: 2rem;
                     width: 2rem;
                 }
             }
-            
+
             div:last-of-type  {
                 flex: 1;
                 padding: 1rem;
-                
+
                 label {
-                    
+
                     .rule-title {
                         display: block;
                         font-weight: 700;
                     }
-                    
+
                     .rule-description {
-                        
+
                     }
                 }
             }
-            
+
             &:nth-child(even) {
                 background: $light-gray;
             }
-            
+
             &:hover {
                 background: $hilite-color;
+            }
+
+            &.has-passed {
+                background: $passed-color;
+                font-style: italic;
             }
         }
     }
@@ -111,17 +117,23 @@ body {
     padding: 1rem;
     padding-top: 0;
     vertical-align: top;
-    
+
     .results-container {
         margin-top: 2rem;
         text-align: center;
         font-size: 3rem;
         font-weight: 700;
-        
+
         .ticked-boxes,
         .total-boxes {
-            
+
         }
+    }
+
+    .gift {
+        margin-top: 2rem;
+        text-align: center;
+        background: $passed-color;
     }
 }
 

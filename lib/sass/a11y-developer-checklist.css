@@ -54,6 +54,9 @@ body {
         background: #f2f2f2; }
       .main-column .main-checklist li:hover {
         background: #ffc; }
+      .main-column .main-checklist li.has-passed {
+        background: #e4f9f2;
+        font-style: italic; }
 
 .side-column {
   width: 30%;
@@ -65,6 +68,10 @@ body {
     text-align: center;
     font-size: 3rem;
     font-weight: 700; }
+  .side-column .gift {
+    margin-top: 2rem;
+    text-align: center;
+    background: #e4f9f2; }
 
 .is-hidden {
   position: absolute;
